@@ -1,0 +1,81 @@
+
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('/public/img/background1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card{
+    color: #fff;
+    width: 100%;
+    max-width: 410px;
+    background-color: rgba(32, 32, 32, 0.6);
+    padding: 20px;
+    padding-top: 12px;
+    border-radius: .5rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.card__header,
+.card__footer,
+.card__temp{
+    grid-column: span 2;
+}
+.card__title{
+    text-align: center;
+    font-size: 2.5rem;
+}
+.card__subtitle{
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+.card__temp{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.card__info{
+    padding-top: 20px;
+}
+.card__description{
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.card__list{
+    display: grid;
+    gap: 8px;
+}
+.card__item{
+    font-size: 0.9rem;
+    font-weight: 200;
+}
+.card__footer{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.25rem;
+}
+.card__btn{
+    padding: .5em .8em;
+    font-size: 1.1rem;
+    border-radius: .4rem;
+    cursor: pointer;
+    background-color: rgba(72, 71, 71, 0.8);
+    box-shadow: 1px 1px rgba(160, 158, 158, 0.4);
+    color: #fff;
+    transition: transform 100ms ease;
+}
+.card__btn:hover{
+    background-color: rgba(110, 108, 108, 0.8);
+    transform: scale(1.05);
+}
+
+.loading{
+    color: #fff;
+}
